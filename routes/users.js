@@ -2,7 +2,17 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get('/users', (req, res) => {
+const users = [
+    {
+        fistName: "Jhon",
+        lastName: "Doe",
+        age: 25
+    }
+]
+
+router.get('/', (req, res) => {
+    console.log(users);
+
     res.send('Hello');
 });
 
