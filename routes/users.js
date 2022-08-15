@@ -1,19 +1,20 @@
 import express from 'express';
+import { getUsers, creatUser, getUserInfo, deleteUser, changeUserInfo } from '../controllers/users.js'
+
+
 
 const router = express.Router();
 
-const users = [
-    {
-        fistName: "Jhon",
-        lastName: "Doe",
-        age: 25
-    }
-]
 
-router.get('/', (req, res) => {
-    res.send('Hello');
-    console.log(users);
 
-});
+router.get('/', getUsers );
+
+router.post('/', creatUser );
+
+router.get('/:id', getUserInfo );
+
+router.delete('/:id', deleteUser );
+
+router.patch('/:id', changeUserInfo); 
 
 export default router;
