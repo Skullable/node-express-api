@@ -7,7 +7,7 @@ let users = [
 ]
 
 export const getUsers = (req, res) => {
-    res.send('On page Users');
+    res.send(users);
 }
 
 export const creatUser = (req, res) => {
