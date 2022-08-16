@@ -11,9 +11,13 @@ app.use(bodyParser.json());
 
 app.use('/users', userRoutes )
 
-mongoose.connect('mongodb+srv://Skullable:@123123@cluster0.j3qumzt.mongodb.net/?retryWrites=true&w=majority', () => 
-console.log('connected to DB!'))
+mongoose
+ .connect('mongodb+srv://Skullable:%40123123@cluster0.j3qumzt.mongodb.net/?retryWrites=true&w=majority')
+ .then(() => {
+ console.log('connected to DB!')})
 
-app.get('/', (req, res) => res.send('Hello from hompage.'));
+
+app.get('/', (req, res) => 
+res.send('Hello from hompage.'));
 
 app.listen(PORT, () => console.log(`server running on port: http://localhost:${PORT}`))

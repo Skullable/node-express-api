@@ -1,14 +1,28 @@
 import { v4 as uuidv4 } from 'uuid';
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const User = require('../models/users.cjs')
 
 let users = [
 ]
 
 export const getUsers = (req, res) => {
-    res.send(users);
+    res.send('On page Users');
 }
 
 export const creatUser = (req, res) => {
-    const user = req.body;
+    const user = new User({
+        fistName: req.body.firstName,
+        lastName: req.body.lastName,
+        age: req.body.age
+    });
+
+    user.save()
+    .then(data => {
+        res.json(data);
+    });
+
+
 
     users.push({ ...user, id: uuidv4()});
 
