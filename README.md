@@ -22,4 +22,4 @@ You may also see any lint errors in the console.
 
 ### `How to link with mongoDB`
 
-in index.js at line 15 add your link with password from your cluster to mongoose.connect upon connecting a message with be displayed in the console.
+in index.js at line 15 add your link with password from your cluster (https://cloud.mongodb.com) to mongoose.connect upon connecting a message with be displayed in the console.
