@@ -10,7 +10,7 @@ You may also see any lint errors in the console.
 
 ### `npm Packages`
 
-**Install the following packages to run the API
+**Install the following packages to run the API**
 
 **Express: npm install express**
 
