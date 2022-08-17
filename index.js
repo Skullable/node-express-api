@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use('/users', userRoutes )
 
 mongoose
- .connect('mongodb+srv://Skullable:%40123123@cluster0.j3qumzt.mongodb.net/?retryWrites=true&w=majority')
+ .connect('Add your link here')
  .then(() => {
  console.log('connected to DB!')})
 

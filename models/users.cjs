@@ -13,7 +13,7 @@ const userSchema = mongoose.Schema({
     age:{
         type: Number,
         requied: true,
-    }
+    },
 
 });
 
