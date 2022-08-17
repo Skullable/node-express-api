@@ -12,13 +12,13 @@ You may also see any lint errors in the console.
 
 **Install the following packages to run the API
 
-**Express: npm install express
+**Express: npm install express**
 
-**Body-parser: npm install body-parser
+**Body-parser: npm install body-parser**
 
-**Nodemon: npm install --save-dev nodemon
+**Nodemon: npm install --save-dev nodemon**
 
-**Mongoose: npm install --save mongoose
+**Mongoose: npm install --save mongoose**
 
 ### `How to link with mongoDB`
 
